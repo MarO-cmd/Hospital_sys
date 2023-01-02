@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Hospital_PL/1.0.0": {
+        "dependencies": {
+          "Hospital_BLL": "1.0.0"
+        },
+        "runtime": {
+          "Hospital_PL.dll": {}
+        }
+      },
+      "Hospital_BLL/1.0.0": {
+        "dependencies": {
+          "Hospital_DAL": "1.0.0"
+        },
+        "runtime": {
+          "Hospital_BLL.dll": {}
+        }
+      },
+      "Hospital_DAL/1.0.0": {
+        "runtime": {
+          "Hospital_DAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Hospital_PL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hospital_BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hospital_DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,36 @@
+D:\Hospital\Hospital_DAL\bin\Debug\net6.0\Hospital_DAL.deps.json
+D:\Hospital\Hospital_DAL\bin\Debug\net6.0\Hospital_DAL.dll
+D:\Hospital\Hospital_DAL\bin\Debug\net6.0\Hospital_DAL.pdb
+D:\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.csproj.AssemblyReference.cache
+D:\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.AssemblyInfoInputs.cache
+D:\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.AssemblyInfo.cs
+D:\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.csproj.CoreCompileInputs.cache
+D:\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.dll
+D:\Hospital\Hospital_DAL\obj\Debug\net6.0\refint\Hospital_DAL.dll
+D:\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.pdb
+D:\Hospital\Hospital_DAL\obj\Debug\net6.0\ref\Hospital_DAL.dll
+G:\Hospital\Hospital_DAL\bin\Debug\net6.0\Hospital_DAL.deps.json
+G:\Hospital\Hospital_DAL\bin\Debug\net6.0\Hospital_DAL.dll
+G:\Hospital\Hospital_DAL\bin\Debug\net6.0\Hospital_DAL.pdb
+G:\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.csproj.AssemblyReference.cache
+G:\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.GeneratedMSBuildEditorConfig.editorconfig
+G:\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.AssemblyInfoInputs.cache
+G:\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.AssemblyInfo.cs
+G:\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.csproj.CoreCompileInputs.cache
+G:\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.dll
+G:\Hospital\Hospital_DAL\obj\Debug\net6.0\refint\Hospital_DAL.dll
+G:\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.pdb
+G:\Hospital\Hospital_DAL\obj\Debug\net6.0\ref\Hospital_DAL.dll
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_DAL\bin\Debug\net6.0\Hospital_DAL.deps.json
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_DAL\bin\Debug\net6.0\Hospital_DAL.dll
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_DAL\bin\Debug\net6.0\Hospital_DAL.pdb
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.csproj.AssemblyReference.cache
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.AssemblyInfoInputs.cache
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.AssemblyInfo.cs
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.csproj.CoreCompileInputs.cache
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.dll
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_DAL\obj\Debug\net6.0\refint\Hospital_DAL.dll
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_DAL\obj\Debug\net6.0\Hospital_DAL.pdb
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_DAL\obj\Debug\net6.0\ref\Hospital_DAL.dll

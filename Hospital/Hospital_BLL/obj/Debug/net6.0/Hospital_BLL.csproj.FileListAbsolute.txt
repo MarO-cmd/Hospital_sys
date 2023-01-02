@@ -1,0 +1,45 @@
+D:\Hospital\Hospital_BLL\bin\Debug\net6.0\Hospital_BLL.deps.json
+D:\Hospital\Hospital_BLL\bin\Debug\net6.0\Hospital_BLL.dll
+D:\Hospital\Hospital_BLL\bin\Debug\net6.0\Hospital_BLL.pdb
+D:\Hospital\Hospital_BLL\bin\Debug\net6.0\Hospital_DAL.dll
+D:\Hospital\Hospital_BLL\bin\Debug\net6.0\Hospital_DAL.pdb
+D:\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.csproj.AssemblyReference.cache
+D:\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.AssemblyInfoInputs.cache
+D:\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.AssemblyInfo.cs
+D:\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.csproj.CoreCompileInputs.cache
+D:\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.csproj.CopyComplete
+D:\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.dll
+D:\Hospital\Hospital_BLL\obj\Debug\net6.0\refint\Hospital_BLL.dll
+D:\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.pdb
+D:\Hospital\Hospital_BLL\obj\Debug\net6.0\ref\Hospital_BLL.dll
+G:\Hospital\Hospital_BLL\bin\Debug\net6.0\Hospital_BLL.deps.json
+G:\Hospital\Hospital_BLL\bin\Debug\net6.0\Hospital_BLL.dll
+G:\Hospital\Hospital_BLL\bin\Debug\net6.0\Hospital_BLL.pdb
+G:\Hospital\Hospital_BLL\bin\Debug\net6.0\Hospital_DAL.dll
+G:\Hospital\Hospital_BLL\bin\Debug\net6.0\Hospital_DAL.pdb
+G:\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.csproj.AssemblyReference.cache
+G:\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.GeneratedMSBuildEditorConfig.editorconfig
+G:\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.AssemblyInfoInputs.cache
+G:\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.AssemblyInfo.cs
+G:\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.csproj.CoreCompileInputs.cache
+G:\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.csproj.CopyComplete
+G:\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.dll
+G:\Hospital\Hospital_BLL\obj\Debug\net6.0\refint\Hospital_BLL.dll
+G:\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.pdb
+G:\Hospital\Hospital_BLL\obj\Debug\net6.0\ref\Hospital_BLL.dll
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.csproj.AssemblyReference.cache
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.AssemblyInfoInputs.cache
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.AssemblyInfo.cs
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.csproj.CoreCompileInputs.cache
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.dll
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_BLL\obj\Debug\net6.0\refint\Hospital_BLL.dll
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.pdb
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_BLL\bin\Debug\net6.0\Hospital_BLL.deps.json
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_BLL\bin\Debug\net6.0\Hospital_BLL.dll
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_BLL\bin\Debug\net6.0\Hospital_BLL.pdb
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_BLL\bin\Debug\net6.0\Hospital_DAL.dll
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_BLL\bin\Debug\net6.0\Hospital_DAL.pdb
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_BLL\obj\Debug\net6.0\Hospital_BLL.csproj.CopyComplete
+C:\Users\Marclin0\Desktop\Tasks FOR Factuly\Hospital\Hospital_BLL\obj\Debug\net6.0\ref\Hospital_BLL.dll
