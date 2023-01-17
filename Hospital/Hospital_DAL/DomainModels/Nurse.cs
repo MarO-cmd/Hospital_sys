@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace Hospital_DAL.DomainModels
 {
-    public class Nurse
+    public class Nurse : HospitalMember
     {
         
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public string Id { get; set; }
         public string  Address { get; set; }
         public decimal Salary { get; set; }
         public static decimal All_Salary = 0;
@@ -19,7 +16,7 @@ namespace Hospital_DAL.DomainModels
 
         public override string ToString()
         {
-            return $"Id : {Id}\nName : {Name}\nAge : {Age}\n" +
+            return $"{base.ToString()}\n" +
                 $"Salary : {Salary}\nAddress : {Address}\nWard id : {ward.Id}\nWard name : {ward.Name}";
         }
 

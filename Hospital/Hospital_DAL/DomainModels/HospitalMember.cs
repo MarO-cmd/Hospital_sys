@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace Hospital_DAL.DomainModels
 {
-    public class Drug
+    public class HospitalMember
     {
+        public string Id { get; set; }
+        public int Age { get; set; }
         public string Name { get; set; }
-        public string Code { get; set; }
-        public string Dosage { get; set; }
-
 
         public override string ToString()
         {
-            return $"Drug Name : {Name}\nDrug Code : {Code}\nDrug Dosage : {Dosage}";
+            return $"Id : {Id}\nName : {Name}\nAge : {Age}";
         }
     }
 }

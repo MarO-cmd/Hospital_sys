@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Hospital_BLL.Repositories
 {
-    public class DoctorRepo : IHumanCRUD<Doctor>
+    public class DoctorRepo : IHumanCRUD<Doctor> , ISorting<Doctor> , ISortDoctor
     {
         static List<Doctor> Doctors = new List<Doctor>();
 
@@ -22,10 +22,8 @@ namespace Hospital_BLL.Repositories
         }
 
         #region CRUD OP
-
-        public void Add()
+        void InsertData(Doctor doctor)
         {
-            var doctor = new Doctor();
 
             Console.Write("Enter The Id : ");
             doctor.Id = Console.ReadLine();
@@ -39,15 +37,43 @@ namespace Hospital_BLL.Repositories
             Console.Write("Enter Salary : ");
             doctor.Salary = decimal.Parse(Console.ReadLine());
 
-            Doctor.All_Salary += doctor.Salary;
-
             doctor.patient = new Patient();
             Console.Write("Enter the patient id that the doctor examin : ");
             doctor.patient.Id = Console.ReadLine();
 
             Console.Write("Enter the patient Name: ");
             doctor.patient.Name = Console.ReadLine();
+        }
+        public void Add()
+        {
+            var doctor = new Doctor();
 
+
+            InsertData(doctor);
+
+            //Console.Write("Enter The Id : ");
+            //doctor.Id = Console.ReadLine();
+
+            //Console.Write("Enter Name : ");
+            //doctor.Name = Console.ReadLine();
+
+            //Console.Write("Enter Age : ");
+            //doctor.Age = int.Parse(Console.ReadLine());
+
+            //Console.Write("Enter Salary : ");
+            //doctor.Salary = decimal.Parse(Console.ReadLine());
+
+            //Doctor.All_Salary += doctor.Salary;   // make it After the func
+
+            //doctor.patient = new Patient();
+            //Console.Write("Enter the patient id that the doctor examin : ");
+            //doctor.patient.Id = Console.ReadLine();
+
+            //Console.Write("Enter the patient Name: ");
+            //doctor.patient.Name = Console.ReadLine();
+
+
+            Doctor.All_Salary += doctor.Salary;
             Doctors.Add(doctor);
 
             Console.Write("Doctor Added..");
@@ -125,6 +151,7 @@ namespace Hospital_BLL.Repositories
                 var UpDoc = Doctors.Where(item => item.Id == Id).ToList();
                 if (UpDoc.Count != 0)
                 {
+
                     Console.Write("Enter Name : ");
                     UpDoc[0].Name = Console.ReadLine();
 
@@ -153,9 +180,56 @@ namespace Hospital_BLL.Repositories
                 else
                     Console.WriteLine("The Doctor Not Found !");
             }
-        } 
+        }
 
         #endregion
+
+        #region Sort
+        public static List<Doctor> SortBy_Id()
+        {
+            if (Doctors.Count == 0)
+                throw new Exception("There is no Doctors");
+            else
+                return Doctors.OrderBy(D => D.Id).ThenBy(D => D.Age).ToList();
+        }
+
+        public static List<Doctor> SortBy_Age()
+        {
+            if (Doctors.Count == 0)
+                throw new Exception("There is no Doctors");
+            else
+                return Doctors.OrderBy(D => D.Age).ThenBy(D => D.Name).ToList();
+        }
+
+        public static List<Doctor> SortBy_Name()
+        {
+            if (Doctors.Count == 0)
+                throw new Exception("There is no Doctors");
+            else
+                return Doctors.OrderBy(D => D.Name).ThenBy(D => D.Age).ToList();
+        }
+
+        public static List<Doctor> SortBy_Salary()
+        {
+
+            if (Doctors.Count == 0)
+                throw new Exception("There is no Doctors");
+            else
+                return Doctors.OrderBy(D => D.Salary).ThenBy(D => D.Age).ToList();
+
+        }
+
+        public static List<Doctor> SortBy_SalaryDesc()
+        {
+
+            if (Doctors.Count == 0)
+                throw new Exception("There is no Doctors");
+            else
+                return Doctors.OrderByDescending(D => D.Salary).ThenBy(D => D.Age).ToList();
+
+        } 
+        #endregion
+
 
     }
 }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Hospital_BLL.Repositories
 {
-    public class PatientRepo : IHumanCRUD<Patient>
+    public class PatientRepo : IHumanCRUD<Patient> , ISorting<Patient> , ISortPatient
     {
         static List<Patient> Patients = new List<Patient>();
        
@@ -54,10 +54,8 @@ namespace Hospital_BLL.Repositories
 
         #region CRUD
 
-        public void Add()
+        void InsertData(Patient patient)
         {
-            var patient = new Patient();
-
             //ID
             Console.Write("Enter The Id : ");
             patient.Id = Console.ReadLine();
@@ -72,10 +70,10 @@ namespace Hospital_BLL.Repositories
             patient.Illness = Console.ReadLine();
             //EnteryDate
             Console.Write("Enter EnteryDate 'D:M:Y' Separated by '/' : ");
-            patient.Entery_date = Console.ReadLine();
+            patient.Entery_date = Console.ReadLine().Trim();
             //ExitDate
             Console.Write("Enter ExitDate 'D:M:Y' Separated by '/' : ");
-            patient.Exit_date = Console.ReadLine();
+            patient.Exit_date = Console.ReadLine().Trim();
             //WardId
             patient.ward = new Ward(); // Definition of the ward => Allocation in the memory
             Console.Write("Enter Ward Id : ");
@@ -83,16 +81,68 @@ namespace Hospital_BLL.Repositories
             //WardName
             Console.Write("Enter Ward Name : ");
             patient.ward.Name = Console.ReadLine();
-            //DrugCode
-            patient.drug = new Drug();// Definition of the Drug => Allocation in the memory
-            Console.Write("Enter drug Code : ");
-            patient.drug.Code = Console.ReadLine();
-            //DrugName
-            Console.Write("Enter drug Name : ");
-            patient.drug.Name= Console.ReadLine();
-            //DrugTime
-            Console.Write("Enter drug Dosage : ");
-            patient.drug.Dosage = Console.ReadLine();
+            //Drug
+            Console.Write("How many Drugs does the patient Take : ");
+            int n = int.Parse(Console.ReadLine());
+            patient.drug = new Drug[n];   // Definition of the Drug => Allocation in the memory
+
+            for (int i = 0; i < n; i++)
+            {
+                patient.drug[i] = new Drug();
+                Console.Write($"Enter the code of druge number {i+1} : ");
+                patient.drug[i].Code = Console.ReadLine();
+                //DrugName
+                Console.Write($"Enter the name of druge number {i + 1} : ");
+                patient.drug[i].Name = Console.ReadLine();
+                //DrugTime
+                Console.Write($"Enter the dosage of druge number {i + 1} : ");
+                patient.drug[i].Dosage = Console.ReadLine();
+            }
+
+           
+        }
+
+        public void Add()
+        {
+            var patient = new Patient();
+
+            ////ID
+            //Console.Write("Enter The Id : ");
+            //patient.Id = Console.ReadLine();
+            ////Name
+            //Console.Write("Enter Name : ");
+            //patient.Name = Console.ReadLine();
+            ////Age
+            //Console.Write("Enter Age : ");
+            //patient.Age = int.Parse(Console.ReadLine());
+            ////Illness
+            //Console.Write("Enter Illness : ");
+            //patient.Illness = Console.ReadLine();
+            ////EnteryDate
+            //Console.Write("Enter EnteryDate 'D:M:Y' Separated by '/' : ");
+            //patient.Entery_date = Console.ReadLine();
+            ////ExitDate
+            //Console.Write("Enter ExitDate 'D:M:Y' Separated by '/' : ");
+            //patient.Exit_date = Console.ReadLine();
+            ////WardId
+            //patient.ward = new Ward(); // Definition of the ward => Allocation in the memory
+            //Console.Write("Enter Ward Id : ");
+            //patient.ward.Id = Console.ReadLine();
+            ////WardName
+            //Console.Write("Enter Ward Name : ");
+            //patient.ward.Name = Console.ReadLine();
+            ////DrugCode
+            //patient.drug = new Drug();// Definition of the Drug => Allocation in the memory
+            //Console.Write("Enter drug Code : ");
+            //patient.drug.Code = Console.ReadLine();
+            ////DrugName
+            //Console.Write("Enter drug Name : ");
+            //patient.drug.Name= Console.ReadLine();
+            ////DrugTime
+            //Console.Write("Enter drug Dosage : ");
+            //patient.drug.Dosage = Console.ReadLine();
+
+            InsertData(patient);
 
             patient.days = Hospital_Days(patient.Entery_date, patient.Exit_date);
             patient.Payment = Payment(patient.Entery_date, patient.Exit_date);       
@@ -196,15 +246,25 @@ namespace Hospital_BLL.Repositories
                     Console.Write("Enter Ward Name : ");
                     UpPnt[0].ward.Name = Console.ReadLine();
 
-                    UpPnt[0].drug = new Drug();// Definition of the Drug => Allocation in the memory
-                    Console.Write("Enter drug Name : ");
-                    UpPnt[0].drug.Name = Console.ReadLine();
+                    Console.Write("How many Drugs does the patient Take : ");
+                    int n = int.Parse(Console.ReadLine());
+                    UpPnt[0].drug = new Drug[n];   // Definition of the Drug => Allocation in the memory
 
-                    Console.Write("Enter drug Code : ");
-                    UpPnt[0].drug.Code = Console.ReadLine();
+                    for (int i = 0; i < n; i++)
+                    {
+                        UpPnt[0].drug[i] = new Drug();
+                        Console.Write($"Enter the code of druge number {i + 1} : ");
+                        UpPnt[0].drug[i].Code = Console.ReadLine();
+                        //DrugName
+                        Console.Write($"Enter the name of druge number {i + 1} : ");
+                        UpPnt[0].drug[i].Name = Console.ReadLine();
+                        //DrugTime
+                        Console.Write($"Enter the dosage of druge number {i + 1} : ");
+                        UpPnt[0].drug[i].Dosage = Console.ReadLine();
+                    }
 
-                    Console.Write("Enter drug Dosage : ");
-                    UpPnt[0].drug.Dosage = Console.ReadLine();
+
+                  
 
                     Patient.All_Payments -= UpPnt[0].Payment; //reset payment
 
@@ -222,10 +282,68 @@ namespace Hospital_BLL.Repositories
             }
         }
 
-
-
-
         #endregion
+
+        #region Sorting
        
+        public static List<Patient> SortBy_Id()
+        {
+            if (Patients.Count == 0)
+                throw new Exception("there are no Patients");
+            else
+                return Patients.OrderBy(p => p.Id).ToList();           
+        }
+
+        public static List<Patient> SortBy_Age()
+        {
+            if (Patients.Count == 0)
+                throw new Exception("there are no Patients");
+            else
+                return Patients.OrderBy(p => p.Age).ToList();
+        }
+
+        public static List<Patient> SortBy_Name()
+        {
+            if (Patients.Count == 0)
+                throw new Exception("there are no Patients");
+            else
+                return Patients.OrderBy(p => p.Name).ToList();
+        }
+        public static List<Patient> SortBy_Days()
+        {
+            if (Patients.Count == 0)
+                throw new Exception("there are no Patients");
+            else
+                return Patients.OrderBy(p => p.days).ToList();
+        }
+
+        public static List<Patient> SortBy_DaysDesc()
+        {
+            if (Patients.Count == 0)
+                throw new Exception("there are no Patients");
+            else
+                return Patients.OrderByDescending(p => p.days).ToList();
+        }
+
+        public static List<Patient> SortBy_Payment()
+        {
+            if (Patients.Count == 0)
+                throw new Exception("there are no Patients");
+            else
+                return Patients.OrderBy(p => p.Payment).ToList();
+        }
+
+        public static List<Patient> SortBy_PaymentDesc()
+        {
+            if (Patients.Count == 0)
+                throw new Exception("there are no Patients");
+            else
+                return Patients.OrderByDescending(p => p.Payment).ToList();
+        }
+
+      
+        #endregion
+
+
     }
 }
